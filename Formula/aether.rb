@@ -14,7 +14,13 @@ class Aether < Formula
   end
 
   def install
-    prefix.install "Aether.app"
+    # Homebrew steps inside a single top-level folder, so the download may arrive either as
+    # "Aether.app" or as the contents of it.
+    if (buildpath/"Contents").exist?
+      (prefix/"Aether.app").install Dir["*"]
+    else
+      prefix.install "Aether.app"
+    end
     # The command points at the stable path, so starting at sign-in keeps working after an update.
     (bin/"aether").write_env_script opt_prefix/"Aether.app/Contents/MacOS/aether-bin", {}
   end
