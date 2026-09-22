@@ -3,17 +3,17 @@
 class Aether < Formula
   desc "Your personal AI, living on your desktop"
   homepage "https://github.com/vansh7266/aether-releases"
-  version "1.0.2"
+  version "1.0.3"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/vansh7266/aether-releases/releases/download/v1.0.2/aether-1.0.2-macos-arm64.zip"
-      sha256 "d119fef3582aaf5afdee326dd7b342d8c4e2e0024569a6b821bbda1d0f16f6f6"
+      url "https://github.com/vansh7266/aether-releases/releases/download/v1.0.3/aether-1.0.3-macos-arm64.zip"
+      sha256 "0353c431f8df5c03c27fdcf372076fc413a14961c69ade2df4a754a31b9ce0a7"
     end
     on_intel do
-      url "https://github.com/vansh7266/aether-releases/releases/download/v1.0.2/aether-1.0.2-macos-x64.zip"
-      sha256 "4781fb73feb2d69be0e46bfc608601879de014edadf3bc89abebb6c18a128676"
+      url "https://github.com/vansh7266/aether-releases/releases/download/v1.0.3/aether-1.0.3-macos-x64.zip"
+      sha256 "586b87868cae08f4ff7164602a99bb0fd061cfd104cede1f2d6cf4282f6c0059"
     end
   end
 
